@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        .blog {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .blog h2 {
+            margin: 0 0 10px;
+        }
+        .blog p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Blog Page</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit rerum porro commodi ratione aliquid repellat itaque aperiam aspernatur enim sapiente quos reiciendis beatae molestiae iure dolores nemo ipsa, est omnis laudantium. Nulla praesentium, inventore animi dolorem commodi reiciendis. Sit facere aperiam quo accusamus porro omnis repellendus doloremque, nihil iure. Sequi!</p>
+    <% blogs.forEach(blog => { %>
+        <div class="blog">
+            <h2><%= blog.title %></h2>
+            <p><%= blog.content %></p>
+        </div>
+    <% }); %>
+</body>
+</
